@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="2pdice.css">    
+    <title>Week 3 - 2 Player Dice Game</title>
+</head>
+<body>
+
+    <audio id="audio" controls style="display:none">
+        <source src="roll2.wav" type="audio/mpeg"> Your browser does not support the audio element.
+    </audio>
+
+<br><br><br>
+
+
+    <div class="row vertical-center">
+        <div class="columnOne">
+            <p class="greenFade">Player 1</p>
+            <p id="status2" class="greenFade"></p>
+            <p id="scoreBox" class="redFade">Current: </p>            
+            <p id="winBox" class="yellowFade"></p>  
+            <p id="dice1"></p>
+
+                </div>
+
+                <div class="columnThree">
+                    <p id="resetGameBtn" class="greenFade smallPadding">New Game</p>
+                    <p id="diceImageBox" class="greenFade smallPadding"></p>
+                    <p id="rollDiceBtn" class="redFade smallPadding">Roll Dice</p>     
+                    <p id="rollDiceBtn2" class="blackBtn smallPadding">Roll Dice</p>                   
+                    <p id="holdBtn" class="yellowFade smallPadding">Hold</p>  
+                    <p id="holdBtn2" class="blackBtn smallPadding">Hold</p>  
+                    <!-- Now I just need to know to have the buttons in the same spot -->
+                        </div>
+
+        <div class="columnTwo">
+            <p class="greenFade">Player 2</p>
+            <p id="statusp2" class="greenFade"></p>            
+            <p id="scoreBox2" class="redFade">Current: 0</p>            
+            <p id="winBox2" class="yellowFade"></p>  
+                </div>
+
+                    
+
+    </div>
+
+    
+
+
+    <!-- another row with 1 column, with the rest of the buttons side by side instead of underneath each other, then I don't have to do extra work making overlays in the middle of the above flexbox -->
+    
+<!-- Instead of using divs for box one just just colored paragraphs -->
+<!-- saves time -->
+
+
+
+    
+<!-- link script at the end of the file just before the body tag -->
+    <script src="2pdice.js"></script>
+</body>
+</html>
